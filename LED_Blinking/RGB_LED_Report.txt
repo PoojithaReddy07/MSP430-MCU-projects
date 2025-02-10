@@ -2,7 +2,7 @@ REPORT
 
 
 # Lab Objective:
-he purpose of this lab is to control a tri-color LED on the MSP430G2ET microcontroller by cycling through seven colors. The objective was to utilize code to combine the red, green, and blue LEDs in different combinations to produce new colors and to set their blinking rate to 1.33Hz. This exercise helped in understanding how to use the timing and pins of the microcontroller to create the appropriate LED patterns. The main goal was to learn how to use basic embedded programming to control hardware.
+The purpose of this lab is to control a tri-color LED on the MSP430G2ET microcontroller by cycling through seven colors. The objective was to utilize code to combine the red, green, and blue LEDs in different combinations to produce new colors and to set their blinking rate to 1.33Hz. This exercise helped in understanding how to use the timing and pins of the microcontroller to create the appropriate LED patterns. The main goal was to learn how to use basic embedded programming to control hardware.
 
 # Lab Table:
 
