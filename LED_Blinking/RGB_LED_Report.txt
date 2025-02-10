@@ -1,0 +1,24 @@
+REPORT
+
+
+# Lab Objective:
+he purpose of this lab is to control a tri-color LED on the MSP430G2ET microcontroller by cycling through seven colors. The objective was to utilize code to combine the red, green, and blue LEDs in different combinations to produce new colors and to set their blinking rate to 1.33Hz. This exercise helped in understanding how to use the timing and pins of the microcontroller to create the appropriate LED patterns. The main goal was to learn how to use basic embedded programming to control hardware.
+
+# Lab Table:
+
+| Color      | Pin States (P2.1, P2.3, P2.5)     |    LED Combination       |
+|------------|-----------------------------------|--------------------------|
+| Red        | High, Low, Low                    | Red                      |
+| Green      | Low, High, Low                    | Green                    |
+| Blue       | Low, Low, High                    | Blue                     |
+| Yellow     | High, High, Low                   | Red + Green              |
+| Magenta    | High, Low, High                   | Red + Blue               |
+| Cyan       | Low, High, High                   | Green + Blue             |
+| White      | High, High, High                  | Red + Green + Blue       |
+
+
+# Commentary and Conclusion:
+My plan for the lab went smoothly overall, but I did encounter a few issues along the way. One of the first problems was that the LED wasn’t blinking at the intended 1.33Hz rate. After reviewing my code, I realized the delay cycles were incorrectly calculated. Once I recalculated the timing and adjusted the delay, the LED blinked at the correct frequency.
+Another issue arose when I forgot to change the jumpers on the board, which caused the LED to malfunction and not display the colors properly. It took me some time to realize that the jumpers were set incorrectly. After adjusting them, the LEDs functioned as expected, and I was able to cycle through the seven colors.
+The code for this lab was based on the professor’s algorithm, which provided a clear guide on managing the GPIO pins to control the red, green, and blue LEDs. To make the program more efficient, I used an array to store the LED color combinations and a for loop to cycle through them, ensuring that the colors changed in sequence with the correct 750ms delay between transitions.
+In the end, I was able to resolve the issues, such as recalculating the delay and adjusting the jumper configuration. These changes allowed the lab to be completed successfully, and I gained a deeper understanding of how to control hardware components using a microcontroller.
